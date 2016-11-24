@@ -29,7 +29,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="GPS-Coordinate in degrees"
+            android:text="Open GPS in device"
             android:textColor="#fff"
             android:layout_marginBottom="30dp"
             />
