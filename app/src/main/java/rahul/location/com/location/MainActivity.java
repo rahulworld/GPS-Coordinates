@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().hide();
         LocationAvailable = false;
 
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
@@ -81,12 +82,6 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         // TODO Auto-generated method stub
 
     }
-
-    /**
-     * See if we have permissionf or locations
-     *
-     * @return boolean, true for good permissions, false means no permission
-     */
     private boolean checkPermission(){
         int result = ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION);
         if (result == PackageManager.PERMISSION_GRANTED){
